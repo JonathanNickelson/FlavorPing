@@ -14,8 +14,11 @@ namespace IdentitySample.Controllers
     [Authorize(Roles = "Admin")]
     public class RolesAdminController : Controller
     {
+        ApplicationDbContext context;
+
         public RolesAdminController()
         {
+            context = new ApplicationDbContext(); 
         }
 
         public RolesAdminController(ApplicationUserManager userManager,
