@@ -23,5 +23,12 @@ namespace IdentitySample.Controllers
 
             return View();
         }
+
+        public ActionResult MenuItems ()
+        {
+            ViewBag.Message = "Edit your menu items here.";
+
+            return View();
+        }
     }
 }
