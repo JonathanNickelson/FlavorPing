@@ -11,13 +11,16 @@ namespace FlavorPing.Models
 
         //Before Scaffolding notes:
         //Once this page is scaffolded there will be no list of who they follow, initially.  So a search box must show up on
-        //intial submit of registration.  So after saffolding that has to be set up on the UserView page.
+        //intial submit of registration (or click a merchant tab on top).  So after saffolding that has to be set up on the UserView page.
         //Need to set it up so the Merchants followed are a link that the user can click on where it shows the menuItems
         //of thar merchant.  The menuItems will have check boxes to select.  Once selections are submitted (through submit button)
         //the merchant and the menu items ought to show up on the Userview.
 
         //Need to add a menu at top where it lists merchants to search.  Once clicked it will list merchants by distance
-        //from users zip code or per Jason's search request.
+        //from users zip code or per Jason's search request.  So under the Merchant controller, when a User is logged in 
+        //we need to show a different view that shows the menu items with checkboxes next to them.  Working on this....
+
+        //Are we ready to scaffold this?
         
         public int UserId { get; set; }
 
