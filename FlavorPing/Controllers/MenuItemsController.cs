@@ -10,6 +10,11 @@ using FlavorPing.Models;
 
 //Notes for what we are working on here.  Please delete any notes that are finished.
 //---Working on adding a controller to go to UserView on here.  Need to find out how to do this?
+//---Do we need a new MVC for UserView alone, UserView page will have a search function to add merchants, and when
+//---clicking merchants they get the option to choose the menuItem
+
+// if (code logic here, something like if logged in user is a User)
+// then return View(UserMenuView, Model);
 
 namespace FlavorPing.Controllers
 {
@@ -35,6 +40,12 @@ namespace FlavorPing.Controllers
             {
                 return HttpNotFound();
             }
+
+            //Possiblle code to use to call the UserView page
+            //if (loggedInUser == User)
+            //{
+            //return View(UserMenuView, Model);
+            //}
             return View(menuItems);
         }
 

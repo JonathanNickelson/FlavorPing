@@ -33,6 +33,10 @@
                     {
                         <li>@Html.ActionLink("MenuItems", "Index", "MenuItems")</li>
                     }
+                    @if (Request.IsAuthenticated && User.IsInRole("User"))
+                    {
+                        <li>@Html.ActionLink("Merchants", "Index", "Merchants")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
