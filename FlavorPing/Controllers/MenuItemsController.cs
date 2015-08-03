@@ -8,6 +8,9 @@ using System.Web;
 using System.Web.Mvc;
 using FlavorPing.Models;
 
+//Notes for what we are working on here.  Please delete any notes that are finished.
+//---Working on adding a controller to go to UserView on here.  Need to find out how to do this?
+
 namespace FlavorPing.Controllers
 {
     public class MenuItemsController : Controller
